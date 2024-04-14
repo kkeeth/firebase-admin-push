@@ -1,6 +1,18 @@
 {
-	"dependencies": {
-		"firebase-admin": "^12.0.0",
-		"firebase-functions": "^4.9.0"
-	}
+  "name": "firebase-admin-push",
+  "version": "1.0.0",
+  "scripts": {
+    "send": "ts-node src/index.ts"
+  },
+  "author": "kkeeth",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
 }
