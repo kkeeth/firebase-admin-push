@@ -1,9 +1,7 @@
 import * as admin from "firebase-admin";
 
 const serviceAccount = require("../credentials.json");
-const deviceTokens = [
-	"dl1ytf9epZ6HkH388iQrGx:APA91bFOSzdp5f8AZ7FCmAZbZMHTeaWqlf8DDFVGpZ7oQQ1acM4DjzNQ0O-l42vqJFhxGc2bvd7fwAkEBawa8E3puD4qTmXcfseZbZtNS29vjX5G5mP12dDwIsPReOSrTfczu8HwbC99",
-];
+const deviceTokens = require("../device-tokens.json");
 
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
